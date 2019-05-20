@@ -9,7 +9,7 @@ from app import app
 
 @pytest.fixture(scope='module')
 def client():
-    # app.testing = True
+    app.testing = True
     client = app.test_client()
     yield client
 
