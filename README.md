@@ -1,7 +1,7 @@
 # Advertisement_Request_Enhancer
 
 This is a microservice endpoint that enhances an incoming advertisement request with additional contextual information 
-This has been implemented using python 
+This has been implemented using python3 
 
 Files included :
 - publisher_lookup_service.py - microservice
@@ -9,6 +9,7 @@ Files included :
 - curl_format.txt - To measure the latency 
 
 ## Prerequisites for Installations/tools 
+- pip install python3
 - pip install flask 
 - pip install requests
 - A free trail account at https://www.maxmind.com/en/home
