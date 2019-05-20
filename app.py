@@ -10,6 +10,7 @@ app = Flask(__name__)
 
 executor = concurrent.futures.ThreadPoolExecutor(max_workers=200)
 
+#timeout for the executor future 
 rpc_timeout = 0.5
 
 
