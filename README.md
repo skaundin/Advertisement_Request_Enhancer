@@ -24,6 +24,27 @@ curl -w "@curl-format.txt" -d@post_data.txt -H "Content-Type:application/json" h
 ## Testing 
 pytest 
 
+### Resources 
+ - Publisher Lookup Service
+Documentation:
+http://159.89.185.155:3000/apidoc/
+ 
+API:
+POST ​http://159.89.185.155:3000/api/publishers/find
+The Site -> Publisher Mapping rarely changes. In fact, it basically only changes when one Publisher buys out another Publisher.
+ 
+- Demographics Lookup Service
+Documentation:
+http://159.89.185.155:3000/apidoc/
+API:
+GET ​http://159.89.185.155:3000/api/sites/SITE_ID/demographics
+The per-Site demographics data is typically refreshed on a weekly basis.
+  
+- Geo-IP Lookup
+We recommend using a library that is based upon the MaxMind data (free trial account should work):
+https://dev.maxmind.com/geoip/
+
+
 ### Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
