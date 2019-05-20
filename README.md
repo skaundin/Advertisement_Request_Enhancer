@@ -4,7 +4,7 @@ This is a microservice endpoint that enhances an incoming advertisement request 
 This has been implemented using python3 
 
 Files included :
-- publisher_lookup_service.py - microservice
+- app.py - microservice
 - post_data.txt - incoming request 
 - curl_format.txt - To measure the latency 
 
@@ -18,7 +18,7 @@ Files included :
 - pip install pytest 
 
 ## Running the web server 
-- python publisher_lookup_service.py 
+- python3 app.py  
 - To measure latency :
 curl -w "@curl-format.txt" -d@post_data.txt -H "Content-Type:application/json" http://localhost:5000/inject_ad
 
